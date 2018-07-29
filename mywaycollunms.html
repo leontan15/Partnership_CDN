@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+/*Adjust collmum */
+div.column {
+    float: left;
+    position: relative;
+    width: 50%;
+}
+/*fix botton*/
+button.button {
+    width: 100px;
+}
+/* fix row */
+.row .row {
+    margin: 0 -16px 0 -16px;
+    width: 100%;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+div.column {
+    float: left;
+    position: relative;
+    width: 51%;
+}
+}
+}
+</style>
+</head>
+<body>
+
+<div class="row left">
+  <div class="column" style="background-color:#ffffff;">
+  <h3> Services 1 </h3>
+  </div>
+  <div class="column" style="background-color:#ffffff;">
+  <h3>Services 2</h3>
+  </div>
+  <div class="column" style="background-color:#ffffff;">
+  <h3>Services 3</h3>
+  </div>
+  
+    
+    
+  </div>
+
+</body>
+</html>
